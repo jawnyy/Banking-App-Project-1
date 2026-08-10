@@ -1,0 +1,8 @@
+db.type=POSTGRES
+
+postgres.url=jdbc:postgresql://localhost:5432/bank
+postgres.username=your_username
+postgres.password=your_password
+
+mongo.uri=mongodb://localhost:27017
+mongo.database=bank
