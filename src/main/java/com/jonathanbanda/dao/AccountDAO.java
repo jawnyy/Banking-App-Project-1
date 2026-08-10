@@ -1,6 +1,5 @@
 package com.jonathanbanda.dao;
 
-import com.jonathanbanda.exception.DuplicateCustomerException;
 import com.jonathanbanda.model.Account;
 import com.jonathanbanda.model.AccountStatus;
 
@@ -9,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface AccountDAO {
-    Account createAccount(Account account) throws DuplicateCustomerException;
+    Account createAccount(Account account);
     Optional<Account> findAccountById(String id);
     List<Account> findAllAccounts(String customerId);
     void updateAccountBalance(String accountId, BigDecimal balance);
