@@ -8,16 +8,16 @@ public class Customer {
     private String lastName;
     private String username;
     private String hashedPassword;
-    private LocalDateTime date;
+    private LocalDateTime createdAt;
 
     public Customer(String id, String firstName, String lastName, String username, String hashedPassword,
-                       LocalDateTime date) {
+                       LocalDateTime createdAt) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;
         this.hashedPassword = hashedPassword;
-        this.date = date;
+        this.createdAt = createdAt;
     }
 
     public String getId() {
@@ -55,11 +55,11 @@ public class Customer {
         this.hashedPassword = hashedPassword;
     }
 
-    public LocalDateTime getDate() {
-        return date;
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
     }
-    public void setDate(LocalDateTime date) {
-        this.date = date;
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
     }
 
     @Override
